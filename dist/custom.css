@@ -1,3 +1,14 @@
+.body {
+    font-family: 'Chilanka', cursive;
+    Font-Size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    Font-Size: 15px; 
+   
+}
+
+.title {
+    font-family: 'Chilanka', cursive;
+}
 .bg-cat-image  {
     background: linear-gradient(to right, rgb(0 0 0 / 14%), rgb(0 0 0 / 5%)), url(../src/assets/sfi7.jpg) no-repeat center;
     background-size: cover; 

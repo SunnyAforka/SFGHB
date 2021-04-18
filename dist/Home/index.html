@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="../style.css" rel="stylesheet"> 
     <link href="../custom.css" rel="stylesheet"> 
     <title>SFI-daily devotional</title>
 </head>
-<body style=""  class="font-sans leading-normal tracking normal  ">
+<body style=""  class="body font-sans leading-normal tracking normal  ">
 
 <!-- header section for this app  -->
 
@@ -37,7 +39,7 @@
         </div>
         
     
-        <div   class="lg:content-center lg:items-center w-full sm:w-auto hidden md:block mt-2 lg:mt-0 z-20 " id="nav-content" style="">
+        <div   class="lg:content-center lg:items-center w-full sm:w-auto hidden md:block mt-2 lg:mt-0 z-20 font-medium" id="nav-content" style="">
           
            <ul class="list-reset md:flex md:flex-wrap  justify-end items-center mx-w-sm">
               <li class="mr-3 py-2 lg:py-0">
@@ -419,6 +421,20 @@
 
 <script>
 
+
+
+//   js for navbar navigation
+
+document.getElementById('nav-toggle').addEventListener('click', function(){
+
+const navMenu = document.getElementById('nav-content')
+
+console.log(navMenu)
+
+navMenu.classList.toggle('hidden')
+
+});
+
 const mySiema = new Siema({
     selector: '.siema',
     perPage : {
@@ -446,22 +462,14 @@ const mySiemaTwo = new Siema({
 });
 
 // listen for keydown event
-setInterval(() => mySiemaTwo.next(), 2500)
+setInterval(() => mySiemaTwo.next(), 2500);
 
 // document.querySelector('.nextTwo').addEventListener('click', ()=> mySiemaTwo.next())
 
 // document.querySelector('.prevTwo').addEventListener('click', ()=> mySiemaTwo.prev())
 
 
-//   js for navbar navigation
 
-document.getElementById('nav-toggle').addEventListener('click', function(){
-
-const navMenu = document.getElementById('nav-content')
-
-navMenu.classList.toggle('hidden')
-
-});
 
 </script>
             
